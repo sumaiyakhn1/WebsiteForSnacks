@@ -1,0 +1,1274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+.responsive {
+  
+  display: none;
+  margin-top: 0;
+  
+ 
+ 
+
+}
+
+.Responsiveheader {
+  /* background-color: brown; */
+  display: flex;
+  /* border: 2px solid black; */
+  border-radius: 6px;
+  box-shadow: 2px 2px 1px 1px rgb(207, 204, 204);
+  background-color: rgb(241, 239, 239);
+  position: sticky;
+  overflow: scroll;
+margin-top: 0;
+width: fit-content;
+width: 606px;
+
+
+}
+
+.Responsiveheader h1 {
+  margin-left: 10px;
+
+}
+
+.Responsiveheader .user-icon {
+  height: 80px;
+  width: 80px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* background-color: rgb(219, 205, 205); */
+  box-shadow: 0.1px 0.2px 0.3px 0.2px gray;
+  
+
+}
+
+.user-icon i {
+  font-size: 2.8rem;
+  padding: 2px;
+  color:rgb(232, 35, 35);
+  z-index: 1;
+
+}
+
+.logo {
+  display: flex;
+  margin-left: 60px;
+  font-size: x-large;
+  font-weight: 800;
+
+}
+
+.header {
+  display: flex;
+ 
+  cursor: pointer;
+  /* background-color: aqua; */
+  height: 60px;
+  /* box-shadow: 0px 2px 1.2px 2px rgb(232, 226, 226); */
+  border: none;
+
+
+
+}
+
+.navbar {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  position:fixed;
+  background-color: white;
+  overflow: clip;
+  /* background-color: aqua; */
+  height: 50px;
+  width: 100vw;
+  box-shadow: 2px 2px 2px 1px rgb(223, 221, 221);
+
+
+}
+.navLinks {
+  display: flex;
+  margin-left: 800px;
+  position: sticky;
+  /* background-color: aqua; */
+
+
+}
+
+.navLinks li {
+  padding-left: 50px;
+  display: flex;
+  list-style: none;
+  
+
+}
+
+.navLinks li a {
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s;
+  
+}
+
+.navLinks li a {
+  position: relative;
+}
+
+.navLinks li a::before {
+  content: '';
+  position: absolute;
+  width: 115%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: rgb(43, 46, 226);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.navLinks li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* main */
+
+.section {
+  display: flex;
+  margin-top: 30px;
+
+}
+
+.left-section {
+  /* background-color: aqua; */
+  height: 400px;
+  /* width: 500px; */
+  margin-left: 140px;
+  margin-top: 80px;
+
+}
+
+.left-section .txt {
+  /* color: red; */
+}
+
+.left-section .txt p {
+  margin-top: 20px;
+  color: black;
+  width: 700px;
+  word-spacing: 7px;
+}
+
+h1 {
+  width: 500px;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1mm;
+}
+
+.right-section {
+
+  /* background-color: aqua; */
+  margin-left: 50px;
+  margin-top: 10px;
+
+
+}
+
+.right-section img {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+
+}
+
+.btn-Explore {
+  margin-top: 20px;
+  transition: transform 0.9s;
+}
+
+.btn-Explore :hover {
+
+  transform: rotate(10deg);
+}
+
+
+.btn-Explore button {
+  height: 40px;
+  width: 110px;
+  padding: 2px;
+  color: white;
+  background-color: rgb(214, 10, 10);
+}
+
+.btn-Explore a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Our Products
+ */
+
+.our-product {
+  display: flex;
+  /* color: red; */
+  /* background-color: aqua; */
+  align-items: center;
+  justify-content: center;
+  height: 60px
+}
+
+.OurProducts {
+  display: flex;
+  margin-top: 20px;
+
+}
+
+.food-type {
+  height: 500px;
+  width: 400px;
+  /* background-color: aqua; */
+  border: 2px solid rgba(121, 116, 116, 0.235);
+  border-radius: 10px;
+  margin-left: 80px;
+
+}
+
+.food-type .img {
+  height: 250px;
+
+  background-size: cover;
+  border-radius: 6px;
+}
+
+
+.food-type img {
+  height: 250px;
+  width: 400px;
+  transition: transform .2s;
+}
+
+.food-type img:hover {
+  transform: scale(1.2);
+}
+
+.about-Food {
+  /* background-color: aqua; */
+  margin-left: 10px;
+
+}
+
+.about-Food h4 {
+  padding: 5px;
+  width: 92px;
+  background-color: rgb(80, 237, 32);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.cal img {
+  height: 37px;
+  width: 37px;
+}
+
+.nutri img {
+  height: 37px;
+  width: 37px;
+
+}
+
+.cal {
+  display: flex;
+}
+
+.nutri {
+  display: flex;
+}
+
+.cal p {
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+
+.nutri p {
+  margin-left: 12px;
+
+}
+
+.how-it-Work {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+
+.how-it-Work h2 {
+  margin-top: 50px;
+}
+
+.all_achieved {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+
+}
+
+.achieved {
+  margin-top: 30px;
+  margin: 36px;
+  padding: 20px;
+  /* background-color: aqua; */
+  /* height: 150px; */
+  width: 330px;
+  transition: transform .2s;
+
+  /* border: 2px solid rgb(165, 161, 161); */
+  box-shadow: 1px 2px 3px 2px rgb(188, 181, 181);
+
+}
+
+.achieved:hover {
+  transform: scale(1.2);
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icons {
+  height: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+
+
+}
+
+.icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-size: x-large;
+
+}
+
+.para {
+  margin-top: 10px;
+  /* background-color: blanchedalmond; */
+}
+
+
+
+
+/* About our Restaurant */
+
+.About_rest {
+  /* background-color: aqua; */
+  /* height: 1000px; */
+  margin-top: 50px;
+  display: flex;
+}
+
+.img_pizza {
+  margin-left: 150px;
+
+}
+
+.img_pizza img {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  box-shadow: 3px 3px 3px 3px gray;
+  margin-top: 20px;
+
+}
+
+.About_Our_rest {
+  /* background-color: aqua; */
+  height: 400px;
+  width: 100vw;
+  margin-left: 150px;
+  margin-top: 60px;
+
+}
+
+.About_Our_rest h2 {
+  font-size: 50px;
+}
+
+.About_Our_rest h4 {
+  margin-top: 15px;
+  padding: 0 0 10px;
+  font-size: 30px;
+}
+
+.Explore_menu_btn {
+  /* background-color: aqua; */
+  margin-top: 30px;
+  font-size: medium;
+
+
+}
+
+.Explore_menu_btn .btn {
+  height: 40px;
+  width: 120px;
+  /* font-weight: 600; */
+  color: white;
+  background-color: rgb(227, 34, 34);
+  border: none;
+  box-shadow: 1px 2px 1px 1px gray;
+  /* outline: none; */
+}
+
+.food-items_menus {
+  background-color: rgb(244, 240, 240);
+  /* min-height: 1000px; */
+
+}
+
+.food_item_types {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food_item_types nav {
+
+  display: flex;
+}
+
+.food_item_types nav li {
+  list-style: none;
+  padding: 18px;
+
+
+}
+
+.food_item_types nav li a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.all_foods {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.all_foods .food {
+  /* background-color: aqua; */
+  border-radius: 3px;
+  height: 400px;
+  width: 300px;
+  padding: 3px;
+  margin: 15px;
+  /* border: 2px solid rgb(183, 176, 176); */
+  box-shadow: 1px 2px 2px 2px rgb(213, 211, 211);
+
+  /* background-color: red; */
+
+}
+
+.food .img {
+  /* background-color: blue; */
+  transition: transform .2s;
+
+
+}
+
+.food .img:hover {
+  transform: scale(1.2);
+
+}
+
+
+.food .img img {
+  height: 200px;
+  width: 300px;
+}
+
+.food .price .name {
+  color: gray;
+  padding: 3px;
+}
+
+.food .price .location {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.price .order {
+  display: flex;
+  /* background-color: blue; */
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.price .orderBtn {
+  height: 35px;
+  width: 100px;
+  margin-left: 130px;
+  border: 2px solid rgb(255, 0, 47);
+  box-shadow: 1px 1px 1px 1px rgb(255, 0, 47);
+  color: rgb(255, 0, 47);
+
+
+}
+
+.frequentlyAskQuestions {
+  background-color: rgb(244, 240, 240);
+  margin-top: 80px;
+  display: none;
+
+
+}
+
+.frequentlyAskQue_h2 {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.frequentlyAskQue {
+  /* background-color: aqua; */
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+
+  /* border: 2px solid black; */
+
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 0;
+
+
+}
+
+.frequentlyAskQue .quest {
+  box-shadow: 2px 2px 2px 2px;
+  margin-left: 0;
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  height: 30px;
+  width: 700px;
+  margin-top: 30px;
+  /* border: 2px solid black; */
+  /* background-color: blue; */
+  border-radius: 6px;
+}
+
+.frequentlyAskQue .quest i {
+  margin-left: 5px;
+}
+
+.frequentlyAskQue .quest p {
+  margin-left: 10px;
+
+}
+
+.downloadSection {
+  background-color: rgb(215, 243, 233);
+  margin-top: 30px;
+  display: flex;
+  /* height: 1000px; */
+}
+
+.downloadSection .img {
+  /* background-color: rgb(255, 115, 0); */
+  margin-left: 200px;
+}
+
+.downloadSection .img img {
+  height: 400px;
+
+}
+
+.textArea {
+  /* background-color: blueviolet; */
+  margin-top: 50px;
+
+  height: 400px;
+  width: 600px;
+
+
+
+}
+
+.textArea .headingAndPara {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textArea .headingAndPara p {
+  margin-top: 10px;
+
+}
+
+.downLoadbtn {
+  margin-top: 30px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downLoadbtn button {
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  margin: 10px;
+
+
+}
+
+.downLoadbtn .playStore {
+  color: white;
+  background-color: black;
+
+
+}
+
+.downLoadbtn .appStore {
+  background-color: black;
+  font-size: 17px;
+  color: white;
+}
+
+.downLoadbtn .appStore i {
+  /* font-size: 29px; */
+}
+
+
+
+/* footer Section
+  */
+
+.footer {
+  /* height: 1000px; */
+  /* background-color: aqua; */
+  margin-top: 20px;
+  border-radius: 2px;
+  background-color: rgb(229, 225, 225);
+
+}
+
+.quicklinksAndGetintouch {
+  /* display: none; */
+}
+
+.footer .upper_section {
+  display: flex;
+  /* display: none; */
+  /* background-color: aqua; */
+  margin-left: 30px;
+  border: none;
+  /* box-shadow: 2px 2px 2px 2px rgb(172, 171, 171); */
+  /* background-color: rgb(229, 225, 225); */
+  padding: 10px;
+
+}
+
+.footer .upper_section h3 {
+  color: brown;
+
+}
+
+.footer .about {
+  width: 500px;
+  /* background-color: aqua; */
+  margin-left: 40px;
+
+}
+
+.footer .about p {
+  margin-top: 13px;
+
+}
+
+.footer .upper_section .foot {
+  height: 200px;
+  width: 200px;
+  margin-left: 40px;
+  /* background-color: blueviolet; */
+
+}
+
+.footer .upper_section .foot li {
+  list-style: none;
+  margin-top: 8px;
+}
+
+.footer .upper_section .foot li a {
+  text-decoration: none;
+  color: black;
+}
+
+.foot .navlink {
+  margin-top: 13px;
+
+}
+
+.upper_section .menulinktouch {
+  margin-left: 100px;
+  /* background-color: brown; */
+  display: flex;
+  /* width: 100vw; */
+
+}
+
+.lower_section {
+  /* height: 1000px; */
+
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px gray;
+  /* border: 2px solid black; */
+  margin-top: 5px;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  body {
+    /* background-color: lightblue; */
+    width: 600px;
+    /* border: 2px solid black; */
+    margin: 1px;
+    /* display: block; */
+
+
+
+  }
+
+  .responsive {
+    display: block;
+    /* background-color: red; */
+    position: fixed;
+    margin-top: -28px;
+
+
+  }
+
+  .navbar {
+    display: none;
+
+  }
+  .navLinks {
+    display: none;
+  }
+  .header {
+    /* background-color: red; */
+    margin-top: 30px;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    height: 1000px;
+    width: 580px;
+    /* background-color: aqua; */
+
+  }
+
+  .left-section {
+    /* background-color: aqua; */
+    height: 400px;
+    width: 600px;
+    /* background-color: red; */
+    margin-left: 10px;
+    margin-left: 0;
+    margin-bottom: 30px;
+
+  }
+
+  .left-section .txt {
+    color: red;
+    margin-left: 8px;
+  }
+
+  .left-section .txt p {
+    margin-top: 20px;
+    color: black;
+    margin-left: 20px;
+    width: 500px;
+    word-spacing: 7px;
+    /* background-color: brown; */
+  }
+
+  .right-section {
+
+    /* background-color: aqua; */
+    margin-left: 200px;
+    margin-top: 1px;
+    /* background-color: aqua; */
+
+
+  }
+
+  .right-section img {
+    border-radius: 50%;
+    
+    width: 300px;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 0;
+
+  }
+
+  .btn-Explore {
+    margin-top: 30px;
+    transition: transform 0.9s;
+    margin-left: 25px;
+  }
+
+
+  .btn-Explore button {
+    height: 60px;
+    width: 140px;
+    padding: 2px;
+    color: white;
+    background-color: rgb(214, 10, 10);
+    box-shadow: 1px 2px 1px 1px gray;
+    font-size: larger;
+  }
+
+  .OurProducts {
+    display: block;
+  }
+
+  .About_rest {
+    display: block;
+
+  }
+
+  .all_foods {
+    display: block;
+  }
+
+  .downloadSection {
+    display: block;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  /* our products */
+  .our-product {
+    display: flex;
+    /* color: red; */
+    font-size: x-large;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    /* height: 60px */
+
+
+  }
+
+  .OurProducts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+  }
+
+  .food-type {
+    height: 500px;
+    width: 500px;
+    /* background-color: rgb(255, 0, 170); */
+
+    margin-left: 50px;
+    margin-top: 10px;
+
+
+  }
+
+  .food-type .img {
+    height: 300px;
+    width: 500px;
+
+    background-size: cover;
+    border-radius: 6px;
+  }
+
+
+  .food-type img {
+    height: 250px;
+    width: 280px;
+    transition: transform .2s;
+  }
+
+  .food-type img:hover {
+    transform: scale(1);
+  }
+
+  .about-Food {
+    /* background-color: red; */
+    margin-left: 10px;
+
+  }
+
+  .about-Food h4 {
+    padding: 1px;
+    width: 92px;
+    /* background-color: rgb(80, 237, 32); */
+    border-radius: 10px;
+    margin-top: 15px;
+
+  }
+
+  .cal img {
+    height: 20px;
+    width: 20px;
+
+  }
+
+  .nutri img {
+    height: 20px;
+    width: 20px;
+
+  }
+
+  .cal {
+    display: flex;
+    /* background-color: blue; */
+    padding: 0;
+    margin: 0;
+  }
+
+  .nutri {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cal p {
+    margin-left: 10px;
+    margin-top: 0px;
+
+  }
+
+  .nutri p {
+    margin-left: 12px;
+
+  }
+
+
+  /* How it is work */
+
+  .how-it-Work {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .how-it-Work h2 {
+    margin-top: 50px;
+  }
+
+  .all_achieved {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .achieved {
+    margin-top: 100px;
+    margin: 10px;
+    padding: 2px;
+    background-color:rgb(243, 239, 239);
+    height: 300px;
+    width: 200px;
+    transition: transform .2s;
+
+    /* border: 2px solid rgb(165, 161, 161); */
+    box-shadow: 1px 2px 3px 2px rgb(188, 181, 181);
+
+  }
+
+  .achieved:hover {
+    transform: scale(1);
+  }
+
+  /* About our Restaurant */
+
+  .About_rest {
+    /* background-color: aqua; */
+    height: 1000px;
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img_pizza {
+    margin-left: 10px;
+
+  }
+
+  .img_pizza img {
+    border-radius: 50%;
+    height: 340px;
+    width: 340px;
+    box-shadow: 3px 3px 3px 3px gray;
+    margin-top: 20px;
+
+  }
+
+  .About_Our_rest {
+    /* background-color: aqua; */
+    height: 400px;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 60px;
+
+  }
+
+  .About_Our_rest h2 {
+    font-size: 50px;
+  }
+
+  .About_Our_rest h4 {
+    margin-top: 15px;
+    padding: 0 0 10px;
+    font-size: 30px;
+  }
+
+  .Explore_menu_btn {
+    /* background-color: aqua; */
+    margin-top: 50px;
+    padding-inline: 30px;
+    
+    
+    margin-left: 200px;
+
+
+  }
+
+  .Explore_menu_btn .btn {
+    height: 60px;
+    width: 150px;
+    font-weight: 600;
+    font-size: large;
+    color: white;
+    background-color: rgb(227, 34, 34);
+    border: none;
+    box-shadow: 1px 2px 1px 1px gray;
+    /* outline: none; */
+  }
+
+
+  /* Food Items */
+
+  .food-items_menus {
+    background-color: rgb(244, 240, 240);
+    /* min-height: 1000px; */
+
+  }
+
+  .food_item_types {
+    /* background-color: aqua; */
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .food_item_types nav {
+
+    display: flex;
+    display: none;
+  }
+
+  .food_item_types nav li {
+    list-style: none;
+    padding: 18px;
+
+
+  }
+
+  .food_item_types nav li a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+
+  .all_foods {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .all_foods .food {
+    /* background-color: aqua; */
+    border-radius: 3px;
+    height: 500px;
+    width: 500px;
+    padding: 3px;
+    margin: 15px;
+    /* border: 2px solid rgb(183, 176, 176); */
+    box-shadow: 1px 2px 2px 2px rgb(213, 211, 211);
+
+    /* background-color: red; */
+
+  }
+
+  .food .img {
+    /* background-color: blue; */
+    transition: transform .2s;
+  }
+
+  .food .img:hover {
+    transform: scale(1);
+  }
+
+  .food .img img {
+    height: 300px;
+    width: 500px;
+    background: cover;
+  }
+
+  .food .price .name {
+    color: gray;
+    padding: 3px;
+  }
+
+  .food .price .location {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .price .order {
+    display: flex;
+    /* background-color: blue; */
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .price .orderBtn {
+    height: 35px;
+    width: 100px;
+    margin-left: 130px;
+    border: 2px solid rgb(255, 0, 47);
+    box-shadow: 1px 1px 1px 1px rgb(255, 0, 47);
+    color: rgb(255, 0, 47);
+  }
+
+  /* DownLoad Section
+*/
+  .downloadSection {
+    background-color: rgb(215, 243, 233);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    /* height: 1000px; */
+  }
+
+  .downloadSection .img {
+    /* background-color: rgb(255, 115, 0); */
+    margin-left: 10px;
+  }
+
+  .downloadSection .img img {
+    height: 400px;
+  }
+
+  .textArea {
+    /* background-color: blueviolet; */
+    margin-top: 50px;
+
+    height: 400px;
+    width: 600px;
+  }
+
+  .textArea .headingAndPara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textArea .headingAndPara p {
+    margin-top: 10px;
+
+  }
+
+  .downLoadbtn {
+    margin-top: 30px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .downLoadbtn button {
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    margin: 10px;
+
+
+  }
+
+  .downLoadbtn .playStore {
+    color: white;
+    background-color: black;
+
+
+  }
+
+  .downLoadbtn .appStore {
+    background-color: black;
+    font-size: 17px;
+    color: white;
+  }
+
+  .downLoadbtn .appStore i {
+    /* font-size: 29px; */
+  }
+.footer .upper_section{
+  display:none;
+}
+
+}
